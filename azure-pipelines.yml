@@ -1,4 +1,10 @@
 # Docker
+- task: AzureWebApp@1
+  inputs:
+    azureSubscription: 'Бесплатная пробная версия(68d293f7-9a9c-4577-b307-ebb40bbdc4a8)'
+    appType: 'webAppLinux'
+    appName: 'myapp'
+    package: '$(System.DefaultWorkingDirectory)/**/*.zip'
 # Build a Docker image
 # https://docs.microsoft.com/azure/devops/pipelines/languages/docker
 
